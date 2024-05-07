@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-container {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+}
+
+.logo {
+  background-color: brown;
+  color: white;
+  padding: 5px 30px;
+  margin: 0px 0;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.nav-links a {
+  color: rgb(65, 65, 65);
+  text-decoration: none;
+}
+
+.estimate {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: brown;
+}
+
+.estimate-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+svg {
+  color: gold;
+  width: 70px;
+  margin: 0px 10px;
+}
+#estimate-title {
+  color: white;
+  padding-left: 10px;
+}
+
+#phone-number {
+  padding: 0px 20px;
+  color: gold;
+}
