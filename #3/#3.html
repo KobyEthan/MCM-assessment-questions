@@ -1,10 +1,36 @@
+<!-- This will test your understanding of basic Regex knowledge and the use of jquery and or
+dom selectors to apply changes to already loaded html.
+Create a script to be added to the <head> of an html document that does the following:
+automatically update any year in the text "Copyright © XXXX" to the current year
+update all instances of "Copyright © XXXX" no matter where they are placed
+change the text color of "Copyright © XXXX" to red -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MCM Question #3</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const currentYear = new Date().getFullYear();
+        const copyrightRegex = /Copyright © \d{4}/g;
+
+        $("body").html(function (index, html) {
+          return html.replace(copyrightRegex, function (match) {
+            return `<span style="color: red;">Copyright © ${currentYear}</span>`;
+          });
+        });
+      });
+    </script>
+    <p>Copyright © 1999</p>
   </head>
-  <body></body>
-  <script></script>
+  <body>
+    <p>Copyright © 2020</p>
+    <footer>
+      <p>Miscellaneous Content</p>
+      <p>Copyright © 2019</p>
+    </footer>
+  </body>
 </html>
