@@ -7,5 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Remove the 'href' attribute to disable the link
     bbbLink.removeAttribute("href");
   }
-  // I do not think that removing "Click for Profile" is possible if it's in the image itself and not the DOM.
+  // I do not think that removing "Click for Profile" is possible if it's in the image itself and is not selectable in the DOM.
+  // Please let me know if I misunderstood the question.
 });
