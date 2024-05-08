@@ -1,4 +1,4 @@
-// May need to include this link in the head of your html fil when testing:
+// Include this link in the head of your html file when testing:
 // <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 $(document).ready(function () {
